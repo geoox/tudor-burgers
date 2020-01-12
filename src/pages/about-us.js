@@ -11,7 +11,7 @@ export default class AboutUs extends Component{
       <Layout>
         <div className="about-us">
           <SEO title="About us" />
-          <div className="parallax">
+          <div className="about-parallax">
             <div className="inner-parallax">
               <p>Our story</p>
             </div>

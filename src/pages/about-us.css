@@ -3,7 +3,7 @@
 
 }
 
-.parallax {
+.about-parallax {
     /* The image used */
     background: url('https://imgur.com/c6ULYsQ.jpg');
   
@@ -24,6 +24,7 @@
 .inner-parallax{
     max-width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
+    font-size: 300%;
 }
 
 .inner-parallax p{
