@@ -1,4 +1,44 @@
 .about-us{
-    padding-top: 10vh;
-    min-height: 90vh !important;
+    /* padding-top: 10vh; */
+
+}
+
+.parallax {
+    /* The image used */
+    background: url('https://imgur.com/c6ULYsQ.jpg');
+  
+    /* Set a specific height */
+    min-height: 85vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-parallax{
+    max-width: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.inner-parallax p{
+    padding: 20px 50px;
+    color: white;
+}
+
+.about-us-container{
+    padding: 20vh !important;
+    background: url('https://ih0.redbubble.net/image.716014828.9198/flat,1000x1000,075,f.u1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us-text{
+    padding: 5vh 7vw;
+    text-align: justify !important;
 }
