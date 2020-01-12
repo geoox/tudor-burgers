@@ -1,42 +1,72 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { Component } from 'react'
+import { Menu } from 'semantic-ui-react'
+import Image from "../components/image"
+import "./header.css"
+import logo from "../images/logo.jpeg"
+import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+export default class Header extends Component {
+  state = {}
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <Menu stackable fixed={'top'} widths={6}>
+        <Menu.Item>
+          <Link to="/">
+            <img src={logo} alt="Logo" width="60px"/>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item
+          name='about'
+          active={activeItem === 'about'}
+          onClick={this.handleItemClick}
+          href="/about-us"
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+            About us
+        </Menu.Item>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+        <Menu.Item
+          name='menu'
+          active={activeItem === 'menu'}
+          onClick={this.handleItemClick}
+          href="/menu"
+        >
+            Menu
+        </Menu.Item>
+
+        <Menu.Item
+          name='locations'
+          active={activeItem === 'locations'}
+          onClick={this.handleItemClick}
+          href="/locations"
+        >
+            Locations
+        </Menu.Item>
+
+        <Menu.Item
+          name='franchise'
+          active={activeItem === 'franchise'}
+          onClick={this.handleItemClick}
+          href="/franchise"
+        >
+            Franchise
+        </Menu.Item>
+
+        <Menu.Item
+          name='contact'
+          active={activeItem === 'contact'}
+          onClick={this.handleItemClick}
+          href="/contact"
+        >
+            Contact
+        </Menu.Item>
+      </Menu>
+    )
+  }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

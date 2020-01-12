@@ -1,0 +1,21 @@
+#gatsby-focus-wrapper > div.ui.stackable.menu{
+    opacity: 0.58;
+    background-color: black;
+}
+
+#gatsby-focus-wrapper > div.ui.stackable.menu:hover{
+    opacity: 1;
+}
+
+#gatsby-focus-wrapper > div.ui.stackable.six.item.menu > a{
+    color: white !important;
+}
+
+
+#gatsby-focus-wrapper > div.ui.stackable.top.fixed.six.item.menu > a.active.item{
+    background-color: maroon;
+}
+
+.ui.menu .item{
+    padding: 0 !important;
+}
