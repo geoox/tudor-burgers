@@ -1,4 +1,21 @@
-.menu-page{
-    padding-top: 10vh;
-    min-height: 90vh !important;
+.menu-parallax {
+    /* The image used */
+    background: url('https://imgur.com/o9j6OXj.jpg');
+  
+    /* Set a specific height */
+    min-height: 85vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-text{
+    text-align: center;
 }

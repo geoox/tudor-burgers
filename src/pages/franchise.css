@@ -1,4 +1,17 @@
-.franchise{
-    padding-top: 10vh;
-    min-height: 90vh !important;
+.franchise-parallax {
+    /* The image used */
+    background: url('https://i.imgur.com/90fWbp1.png');
+  
+    /* Set a specific height */
+    min-height: 85vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -7,15 +7,23 @@
     opacity: 1;
 }
 
-#gatsby-focus-wrapper > div.ui.stackable.six.item.menu > a{
-    color: white !important;
-}
-
-
-#gatsby-focus-wrapper > div.ui.stackable.top.fixed.six.item.menu > a.active.item{
+#gatsby-focus-wrapper > div.ui.stackable.top.fixed.seven.item.menu > a.active.item{
     background-color: maroon;
 }
 
 .ui.menu .item{
     padding: 0 !important;
+}
+
+.item img{
+    margin-bottom: 0;
+}
+
+.header-menu a:hover{
+    background-color: #e5dbc4 !important;
+    color: black !important;
+}
+
+.header-menu a{
+    color: white !important;
 }

@@ -1,18 +1,40 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import React, { Component } from "react"
+import { Button, Header, Icon, Segment, Menu } from 'semantic-ui-react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './menu.css'
 
-const Menu = () => (
-  <Layout>
-    <div className="menu-page">
-      <SEO title="Menu" />
-      <h1>Hi from the menu page</h1>
-      <Link to="/">Go back to the homepage</Link>
-    </div>
-  </Layout>
-)
+export default class MenuPage extends Component{
 
-export default Menu
+  render(){
+    return(
+      <Layout>
+        <div className="menu-page">
+          <SEO title="Menu" />
+          <div className="menu-parallax">
+            <div className="inner-parallax">
+              <p>Menu</p>
+            </div>
+          </div>
+          <div className="menu-page-container">
+
+              <Segment placeholder>
+                <Header icon>
+                  <Icon circular inverted color='brown' name='file text' />
+                  <p className="menu-text">
+                  Cosmopolis - Complex Rezidential Cosmopolis
+                    <br/>
+                  Ploiesti - Greceanu 4
+                  </p>
+                </Header>
+                
+              </Segment>
+              
+          </div>
+
+        </div>
+      </Layout>
+    )
+  }
+}
+

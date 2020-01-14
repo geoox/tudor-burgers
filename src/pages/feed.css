@@ -1,0 +1,18 @@
+.feed{
+    background-color: #492723;
+    background-image: linear-gradient(90deg, transparent 50%,
+    #e5dbc4 50%);
+    background-size: 100px 100px;
+}
+
+.feed-container{
+    padding: 5em 0 5em 0 !important;
+    text-align: center;
+}
+
+.feed-container iframe{
+    width: 75vw !important;
+    margin: auto !important;
+    border:0;
+    overflow:hidden;
+}

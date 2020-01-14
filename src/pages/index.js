@@ -14,9 +14,6 @@ const IndexPage = () => (
     <div className="carousel-container">
       <Carousel infiniteLoop autoPlay transitionTime={1000} emulateTouch showStatus={false} showThumbs={false} showIndicators={false}>
           <div className="carousel-img">
-              <img src="https://imgur.com/c6ULYsQ.jpg" />
-          </div>
-          <div className="carousel-img">
               <img src="https://i.imgur.com/hnnb2Xx.png"/>
           </div>
           <div className="carousel-img">
@@ -33,6 +30,9 @@ const IndexPage = () => (
           </div>
           <div className="carousel-img">
               <img src="https://i.imgur.com/O6bW5rJ.png" />
+          </div>
+          <div className="carousel-img">
+              <img src="https://imgur.com/c6ULYsQ.jpg" />
           </div>
       </Carousel>
     </div>

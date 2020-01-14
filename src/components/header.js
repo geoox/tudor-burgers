@@ -14,7 +14,7 @@ export default class Header extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu stackable fixed={'top'} widths={6}>
+      <Menu stackable fixed={'top'} widths={7} className="header-menu">
         <Menu.Item>
           <Link to="/">
             <img src={logo} alt="Logo" width="60px"/>
@@ -46,6 +46,15 @@ export default class Header extends Component {
           href="/locations"
         >
             Locations
+        </Menu.Item>
+
+        <Menu.Item
+          name='feed'
+          active={activeItem === 'feed'}
+          onClick={this.handleItemClick}
+          href="/feed"
+        >
+            Feed
         </Menu.Item>
 
         <Menu.Item
