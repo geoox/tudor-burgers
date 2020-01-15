@@ -22,8 +22,21 @@
 .header-menu a:hover{
     background-color: #e5dbc4 !important;
     color: black !important;
+    font-style: normal;
 }
 
 .header-menu a{
     color: white !important;
+    font-size: 115%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    div.ui.stackable.menu{
+        opacity: 0.92 !important;
+    }
+
+    .header-menu a{
+        margin: 1vh;
+    }
 }

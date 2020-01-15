@@ -20,10 +20,11 @@ export default class Franchise extends Component{
 
               <Segment placeholder>
                 <Header icon>
-                  <Icon circular inverted color='brown' name='food' />
+                  <Icon circular inverted color='brown' name='vcard' />
                   <p className="about-us-text">
-                  Tudor Gourmet Burgers is a creation of taste and flavours gathered from 5 continents, of home made artisanal sauces and mixed spices, a mix of 100% natural ingredients perfectly balanced to offer you a unique burger experience. 
-      We thank you for being here and of course… BON APPETIT!
+                    Open your own Tudor Gourmet Burgers. Natural, homemade, you have the chance to share our Tudor Artisanal sauces or buy from fabricadesosuri.ro
+                    <br/><br/>
+                    {/* Deschideti propriul local Tudor Gourmet Burgers. Totul creat natural, artizanal, distribuie sosurile Tudor Artisanal sau cumpara-le direct de pe pagina fabricadesosuri.ro */}
                   </p>
                 </Header>
                 <Button content='See our offerings' icon='file alternate' href="/menu" color="brown"></Button>

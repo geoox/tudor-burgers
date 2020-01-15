@@ -1,10 +1,35 @@
+@media only screen and (min-width: 600px){
+    .contact-container{
+        padding: 10vh;
+        /* background: url('https://imgur.com/5Vxrt5J.jpg'); */
+    
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+    }
+
+    .gdpr-check label{
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .ui.message{
+        width: 40% !important;
+        margin: auto !important;
+        margin-top: 4vh !important;
+        text-align: center;
+    }
+}
+
+.ui.message{
+    width: 80%;
+    margin: auto !important;
+    margin-top: 4vh !important;
+    text-align: center;
+}
+
 .contact-container{
-    padding: 10vh;
-    background: url('https://imgur.com/5Vxrt5J.jpg');
-
-    background-position: center;
-    /* background-repeat: no-repeat; */
-
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .contact-parallax {
@@ -36,18 +61,7 @@ div.six.wide.field{
     text-align: center;
 }
 
-.gdpr-check label{
-    width: 20%;
-    margin: 0 auto;
-}
-
 .submit-btn{
     text-align: center;
 }
 
-.ui.message{
-    width: 40% !important;
-    margin: auto !important;
-    margin-top: 4vh !important;
-    text-align: center;
-}

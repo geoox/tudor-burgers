@@ -22,9 +22,10 @@
 }
 
 .inner-parallax{
-    max-width: 50%;
+    /* max-width: 50%; */
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 300%;
+    font-style: italic;
 }
 
 .inner-parallax p{
@@ -37,9 +38,11 @@
     background: url('https://imgur.com/6VA3RdR.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .about-us-text{
     padding: 5vh 7vw;
     text-align: justify !important;
+    font-style: italic;
 }

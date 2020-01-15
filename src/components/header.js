@@ -8,7 +8,10 @@ import { Link } from 'gatsby'
 export default class Header extends Component {
   state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+    window.location='/'+name;
+  }
 
   render() {
     const { activeItem } = this.state
@@ -17,7 +20,7 @@ export default class Header extends Component {
       <Menu stackable fixed={'top'} widths={7} className="header-menu">
         <Menu.Item>
           <Link to="/">
-            <img src={logo} alt="Logo" width="60px"/>
+            <img src={logo} alt="Logo" width="90px"/>
           </Link>
         </Menu.Item>
 
@@ -34,7 +37,6 @@ export default class Header extends Component {
           name='menu'
           active={activeItem === 'menu'}
           onClick={this.handleItemClick}
-          href="/menu"
         >
             Menu
         </Menu.Item>
@@ -43,7 +45,6 @@ export default class Header extends Component {
           name='locations'
           active={activeItem === 'locations'}
           onClick={this.handleItemClick}
-          href="/locations"
         >
             Locations
         </Menu.Item>
@@ -52,7 +53,6 @@ export default class Header extends Component {
           name='feed'
           active={activeItem === 'feed'}
           onClick={this.handleItemClick}
-          href="/feed"
         >
             Feed
         </Menu.Item>
@@ -61,7 +61,6 @@ export default class Header extends Component {
           name='franchise'
           active={activeItem === 'franchise'}
           onClick={this.handleItemClick}
-          href="/franchise"
         >
             Franchise
         </Menu.Item>
@@ -70,7 +69,6 @@ export default class Header extends Component {
           name='contact'
           active={activeItem === 'contact'}
           onClick={this.handleItemClick}
-          href="/contact"
         >
             Contact
         </Menu.Item>

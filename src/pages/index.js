@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import 'semantic-ui-css/semantic.min.css'
 import { Carousel } from 'react-responsive-carousel';
 import "./index.css"
-import { Button, Header, Icon, Segment, Menu } from 'semantic-ui-react'
+import { Header, Segment } from 'semantic-ui-react'
 
 
 
@@ -47,7 +47,8 @@ const IndexPage = () => (
         </Header>
       </Segment>
 
-      </div>
+    </div>
+    
   </Layout>
 )
 
