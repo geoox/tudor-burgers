@@ -34,10 +34,11 @@
 }
 
 .about-us-container{
-    padding: 20vh !important;
+    padding: 3vh;
+    /* padding: 20vh !important;
     background: url('https://imgur.com/6VA3RdR.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     
 }
 

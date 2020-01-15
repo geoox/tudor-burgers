@@ -1,9 +1,13 @@
-#gatsby-focus-wrapper > div.ui.stackable.menu{
-    opacity: 0.58;
+*:focus {
+    outline: none !important;
+}
+
+div.ui.stackable.menu{
+    opacity: 0.8;
     background-color: black;
 }
 
-#gatsby-focus-wrapper > div.ui.stackable.menu:hover{
+div.ui.stackable.menu:hover{
     opacity: 1;
 }
 
@@ -27,16 +31,129 @@
 
 .header-menu a{
     color: white !important;
-    font-size: 115%;
+    font-size: 120%;
     font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
-    div.ui.stackable.menu{
+    /* div.ui.stackable.menu{
         opacity: 0.92 !important;
     }
 
     .header-menu a{
         margin: 1vh;
+    } */
+
+    .header-menu{
+        display: none !important;
     }
 }
+
+@media only screen and (min-width: 600px){
+    .bm-burger-button,
+    .menu-mob,
+    .mobile-menu-container{
+        display: none !important;
+    }
+
+}
+
+/* mobile menu styles */
+
+.mobile-menu-container{
+    height: 100px;
+    background-color: #141414;
+    position: fixed;
+    width: 100vw;
+    z-index: 1001;
+    opacity: 0.99;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #e5dbc4;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: black;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 30px;
+    width: 30px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    /* background: rgba(255, 0, 0, 0.63); */
+    background: #e5dbc4;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #141414;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    font-style: italic;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    padding: 2vh;
+    margin: 3vh;
+    color: #e5dbc4;
+    /* background-color: #e5dbc4; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    /* border-radius: 20px; */
+    /* border-bottom: 1px solid #e5dbc4;
+    padding-bottom: 4px; */
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .bm-item-list a:hover{
+      color: #824411;
+  }

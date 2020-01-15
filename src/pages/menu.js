@@ -21,9 +21,11 @@ export default class MenuPage extends Component{
               <Segment placeholder>
                 <Header icon>
                   <Icon circular inverted color='brown' name='file text' />
+                  <br/>
                   <p className="menu-text">
+                    
                   Cosmopolis - Complex Rezidential Cosmopolis
-                    <br/>
+                    <br/><br/>
                   Ploiesti - Greceanu 4
                   </p>
                 </Header>
