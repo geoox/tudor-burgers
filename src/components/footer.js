@@ -14,18 +14,18 @@ export default class Footer extends Component {
             <Grid.Column>
             
             </Grid.Column>
-            <Grid.Column width={8}>
-                <h3>Tudor Gourmet Burgers</h3>
-                <h5>© 2020, Bucharest, Romania</h5>
-                <a href="https://www.facebook.com/tudorburgers/" style={{padding: "7px"}}>
+            <Grid.Column width={10}>
+                <h3  style={{marginBottom: "4vh"}}>Follow Tudor Gourmet Burgers on:</h3>
+                <a href="https://www.facebook.com/tudorburgers/" style={{padding: "20px"}} className="footer-item">
                     <Icon name='facebook' size="big" link color="brown"/>
                 </a>
-                <a href="https://www.instagram.com/tudorburgers/" style={{padding: "7px"}}>
+                <a href="https://www.instagram.com/tudorburgers/" style={{padding: "20px"}} className="footer-item">
                     <Icon name='instagram' size="big" link color="brown"/>
                 </a>
-                <a href="https://www.tripadvisor.com/Restaurant_Review-g294458-d11796412-Reviews-Tudor_Gourmet_Burgers-Bucharest.html" style={{padding: "7px"}}>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g294458-d11796412-Reviews-Tudor_Gourmet_Burgers-Bucharest.html" style={{padding: "20px"}} className="footer-item">
                     <Icon name='tripadvisor' size="big" link color="brown"/>
                 </a>
+                {/* <h5>© 2020, Bucharest, Romania</h5> */}
             </Grid.Column>
             <Grid.Column>
             

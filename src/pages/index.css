@@ -10,11 +10,35 @@ html, body{
     .carousel{
         height: 100vh !important;
     }
+
+    .home-plus{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px){
     .carousel-container{
         padding-top: 100px;
+    }
+
+    .home-plus{
+        background-color: black !important;
+        padding: 3vh;
+    }
+
+    .main-item{
+        padding-bottom: 4vh;
+        padding-left: 9vh;
+        font-style: italic;
+        font-size: 170%;
+    }
+
+    .main-item a i{
+        margin-right: 2vh;
+    }
+
+    .main-item a{
+        color: white !important;
     }
 }
 

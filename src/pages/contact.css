@@ -8,7 +8,7 @@
     }
 
     .gdpr-check label{
-        width: 20%;
+        width: 50%;
         margin: 0 auto;
     }
 
@@ -58,7 +58,7 @@ div.six.wide.field{
 .gdpr-check{
     padding: 4vh !important;
     width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 
 .submit-btn{

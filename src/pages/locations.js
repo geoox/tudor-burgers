@@ -15,7 +15,7 @@ const Locations = () => (
         </div>
       </div>
       <div className="google-map">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1oYG-WHgGlCbGWIQ3TdV9ef97_f5mnbL-"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1oYG-WHgGlCbGWIQ3TdV9ef97_f5mnbL-&z=7"></iframe>
       </div>
     </div>
   </Layout>

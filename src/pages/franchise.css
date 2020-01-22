@@ -15,3 +15,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.franchise-text{
+    text-align: center;
+    font-style: italic;
+    padding: 5vh;
+}
+
+.franchise-container{
+    padding: 7vh;
+}

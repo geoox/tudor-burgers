@@ -49,7 +49,7 @@ export default class Contact extends Component{
 
       window.Email.send({
         SecureToken: "bc6a7a53-459f-4c2e-b66b-46327900d5cf",
-        To : "contact@tudorburgers.ro",
+        To : "info@tudorburgers.ro",
         From : this.state.Email,
         Subject : "Contact form",
         Body : "Name: " + this.state.Name + "<br>" + "Phone: " + this.state.Phone + "<br>" + "Message: " + this.state.Message
@@ -100,7 +100,7 @@ export default class Contact extends Component{
               <input placeholder='Phone' />
             </Form.Field>
             <Form.TextArea label='Message' placeholder='Message' onChange={this.formChange} width={6}/>
-            <Checkbox onChange={this.checkboxChange} label='I consent *GDPR message*' className="gdpr-check"/>
+            <Checkbox onChange={this.checkboxChange} label='By filling out this form I agree to the Privacy Policy for the use and processing of personal data.' className="gdpr-check"/>
             <Form.Button onClick={this.onSubmitClick} className="submit-btn">Submit</Form.Button>
           </Form>
 

@@ -22,5 +22,35 @@
 }
 
 .menu-page-container{
-    padding: 5vh;
+    padding: 2vh;
+    display: block;
+    margin: auto;
+}
+
+.react-pdf__Page__canvas{
+    margin: auto;
+    width: 95vw !important;
+    height: 100% !important;
+}
+
+.menu-page .ui.placeholder.segment {
+    background-color: #ffffff !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .view-pc{
+        display: none !important;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+.menu-page-container a{
+    color: #845232 !important;
+    font-style: italic;
+    font-size: 180%;
+    text-align: center;
+    /* padding: 2vh; */
 }

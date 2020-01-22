@@ -2,8 +2,16 @@ footer{
     background-color: black;
     text-align: center;
     padding: 5vh;
+    font-style: italic;
 }
 
 footer h3, footer h5{
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer-item {
+        padding: 2px !important;
+    }
+}
+
