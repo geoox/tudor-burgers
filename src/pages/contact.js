@@ -21,8 +21,6 @@ export default class Contact extends Component{
     var obj  = {}
     obj[key] = val
     this.setState(obj)
-
-    console.log(this.state) 
   }
 
   checkboxChange = () => {
@@ -65,7 +63,6 @@ export default class Contact extends Component{
               formSuccess: true
             })
           } 
-          console.log(message);
         })
     }
 
